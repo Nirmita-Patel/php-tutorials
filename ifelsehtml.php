@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <p>Marks: <?=$marks?></p>
+    <p><b>Marks: <?=$marks?></b></p>
      
     <?php if (100>=$marks && $marks>=80): ?>
         <h1>Grade : A</h1> 
