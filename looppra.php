@@ -3,8 +3,8 @@ $start = 1;
 $end = 10;
 $num = 2 ;
 
-$i = 1;
-$j = 1;
+$i = 0;
+$j = 0;
 ?>
 
     <!DOCTYPE html>
@@ -56,7 +56,7 @@ $j = 1;
                 <td>
 <pre>
 <?php while($i < 8):?>
-<?php $j = 1;?>
+<?php $j = 0;?>
 <?php while($j <= $i):?>
 <?="* "?>
 <?php $j++;?>
@@ -65,6 +65,9 @@ $j = 1;
 <?php $i++;?>
 <?php endwhile;?>
 </pre>
+          <td>2</td>
+         
+            
                 </td>
             </tr>
         </table>

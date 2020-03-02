@@ -21,6 +21,7 @@
     <a href="loop2.php">Loop2</a>
     <a href="operator2.php">operator2</a>
     <a href="looppra.php">looppra</a>
+    <a href="forloop1.php">forloop1</a>
 
     </div>
     <div>
