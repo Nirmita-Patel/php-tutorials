@@ -22,9 +22,13 @@
     <a href="operator2.php">operator2</a>
     <a href="looppra.php">looppra</a>
     <a href="forloop1.php">forloop1</a>
-
+    <a href="forloop2.php">forloop2</a>
+    <a href="forloophtml.php">forloophtml</a>
+    <a href="while&forloop.php">while&forloop</a>
+    <a href="table.php">table</a>
     </div>
     <div>
+        <a href="gloabalvariables.php">PHP Globals</a>
         <a href="phpconstant.php">phpconstant</a>
     </div>
 </body>
