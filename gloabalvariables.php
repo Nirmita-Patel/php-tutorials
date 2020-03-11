@@ -31,4 +31,6 @@ inc();//$y = 1
 inc();//$y = 2
 
 
-var_dump($_SERVER);
+//var_dump($_SERVER);
+
+//echo php_info();
