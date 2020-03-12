@@ -33,4 +33,3 @@ inc();//$y = 2
 
 //var_dump($_SERVER);
 
-//echo php_info();

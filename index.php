@@ -29,6 +29,7 @@
     </div>
     <div>
         <a href="gloabalvariables.php">PHP Globals</a>
+        <a href="string.php">String</a>
         <a href="phpconstant.php">phpconstant</a>
     </div>
 </body>
