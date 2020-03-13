@@ -55,3 +55,85 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
 $name = strtoupper(implode("-",explode(" ",$name)));
 echo "Join -> ".$name."<br>";
+/***
+ *  salt = sumit
+ * 
+ *  adc
+ * 
+ * hash = 125dsdfs154
+ */
+
+$md5 = md5("sumit more");
+echo $md5."<br>";
+$md5 = sha1("sumit more");
+echo $md5."<br>";
+
+$pass = "sumit";
+$pass = md5($pass);
+$pass = sha1($pass);
+$pass = md5($pass);
+$pass = sha1($pass);
+echo $pass."<br>";
+
+
+$pass = "        sumit         ";
+echo $pass . " -> ".strlen($pass)."<br>";
+$pass = trim($pass);
+echo $pass. " -> ".strlen($pass)."<br>";
+
+
+$pass = "<h1><b>sumit</b></h1>";
+echo strip_tags($pass)."<br>";
+$pass = "<script>alert('sumit')</script>";
+echo strip_tags($pass)."<br>";
+
+$data = '<!DOCTYPE html><html>
+<head>
+</head>
+<body>
+<p style="text-align: center;"><span style="color: #bdc3c7;">&rarr; This is a full-featured editor demo. Please explore! &larr;</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<h2 style="text-align: center;">TinyMCE provides a <span style="text-decoration: underline;">full-featured</span> rich text editing experience, and a featherweight download.</h2>
+<p style="text-align: center;"><strong> <span style="font-size: 14pt;"> <span style="color: #7e8c8d; font-weight: 600;">No matter what you\'re building, TinyMCE has got you covered.</span> </span> </strong></p>
+<table style="border-collapse: collapse; width: 85%; margin-left: auto; margin-right: auto; border: 0;">
+<tbody>
+<tr>
+<td style="width: 25%; text-align: center; padding: 7px;"><span style="color: #95a5a6;">🛠 50+ Plugins</span></td>
+<td style="width: 25%; text-align: center; padding: 7px;"><span style="color: #95a5a6;">💡 Premium Support</span></td>
+<td style="width: 25%; text-align: center; padding: 7px;"><span style="color: #95a5a6;">🖍 Custom Skins</span></td>
+<td style="width: 25%; text-align: center; padding: 7px;"><span style="color: #95a5a6;">⚙ Full API Access</span></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>';
+/**
+ * htmlentities -> convert html to string
+ * html_entity_decode -> conver htmlstring to html
+ */
+// echo htmlentities($data);
+
+// echo html_entity_decode($data);
+
+echo str_shuffle("Hello World");
+echo "<br>";
+$str = "INV201920";
+echo str_pad($str,10,"00")."<br>";
+$id = 12566;
+$acid = str_pad($str,10,"00").str_pad($id,4,"00",STR_PAD_LEFT);
+echo $acid;
+
+
+/**
+ * 
+ * $input = "sumit";
+
+ +------------+
+ |   sumit    |
+ +------------+
+
+ +-----------------+
+ |   sumit more    |
+ +-----------------+
+
+  */
