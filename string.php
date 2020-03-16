@@ -137,3 +137,64 @@ echo $acid;
  +-----------------+
 
   */
+
+
+$number = 9;
+$str = "Beijing";
+$sal = 70.20;
+$txt = sprintf("There are %d million %f bicycles in %s.",$number,$sal,$str);
+echo $txt."<br>";
+
+
+$number = 9;
+$str = "Beijing";
+$txt = sprintf("There are %'$20u million bicycles in %'x20s.",$number,$str);
+echo $txt."<br>";
+
+$number = 9;
+$str = "Beijing";
+$sal = 7820.25536695;
+$txt = sprintf("There are %'$20u million %.8f bicycles in %'x20s.",$number,$sal,$str);
+echo $txt."<br>";
+
+
+$name = "sUmit";
+echo "find and replace -> ".str_ireplace("sumit","sumit",$name)."<br>";
+
+$space = str_repeat(" ",12);
+echo"<br>";
+echo str_repeat("*",25);
+echo"<br>";
+echo "<pre>";
+echo sprintf("|  %12s%s|",$name,$space);
+echo "</pre>";
+echo str_repeat("*",25);
+
+echo "<br>";
+echo strcasecmp("Hello world!","HELLO WORLD");
+echo "<br>";
+
+echo "<br>";
+echo stripcslashes("Hello \World!");
+echo "<br>";
+
+echo "<br>";
+echo stripslashes("Who\'s Peter Griffin?");
+echo "<br>";
+
+echo strpos("I love php, I love php too!","php");
+echo "<br>";
+echo stripos("I love php, I love php too!","PHP",0);
+echo "<br>";
+echo strrpos("I love php, I love php too!","php",-18);
+echo "<br>";
+echo "<br>";echo "<br>";
+
+$occ = 1;
+$i = strlen("php");
+while($occ){
+    $occ = stripos("I love php, I love php too!PHP I love php, I love php too!","PHP",$occ+$i);
+    echo $occ;
+    echo "<br>";
+    // echo stripos("I love php, I love php too!","PHP",$occ+$i);
+}
