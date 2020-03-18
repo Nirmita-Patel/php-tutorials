@@ -198,3 +198,11 @@ while($occ){
     echo "<br>";
     // echo stripos("I love php, I love php too!","PHP",$occ+$i);
 }
+
+
+
+echo strstr("Hello World! Sumit",'ld');
+echo "<br>";
+echo stristr("Hello World! Sumit",'LD');
+echo "<br>";
+echo stristr("Hello World! Sumit",'LD',True);
